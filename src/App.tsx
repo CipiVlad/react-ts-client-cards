@@ -3,6 +3,7 @@ import './App.css'
 import { Col, Container, Row } from 'react-bootstrap'
 import { User } from './models/user.model'
 import UsersList from './components/UsersList'
+import CreateUser from './components/CreateUser'
 
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
         </Row>
         <Row>
           <Col>
-
+            <CreateUser users={users} setUsers={setUsers} />
           </Col>
         </Row>
       </Container>
